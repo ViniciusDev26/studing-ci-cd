@@ -10,7 +10,7 @@ describe("test sample", () => {
 
     expect(response.statusCode).toBe(200)
     expect(response.body).toEqual({
-      "message": "hello"
+      "message": "hello world"
     })
   })
 })
