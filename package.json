@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "test": "vitest",
-    "lint": "eslint src/**/*.ts",
+    "lint": "eslint src/**/*.ts --fix",
     "build": "tsc -p tsconfig.build.json"
   },
   "devDependencies": {

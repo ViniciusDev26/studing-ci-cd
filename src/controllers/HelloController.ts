@@ -1,7 +1,7 @@
-import { Request, Response } from "express";
+import { Request, Response } from 'express'
 
 export class HelloController {
-  getMessage(req: Request, res: Response) {
-    res.send("hello world")
+  getMessage (req: Request, res: Response): void {
+    res.send('hello world')
   }
 }
