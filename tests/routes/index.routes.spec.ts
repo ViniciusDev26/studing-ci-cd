@@ -4,7 +4,6 @@ import { app } from "../../src/app";
 
 describe("test sample", () => {
   it("should return true", async () => {
-    console.log("response")
     const response = await supertest(app)
       .get('/')
 
