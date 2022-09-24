@@ -5,7 +5,8 @@
   "author": "Carlos Vinicius <viniciusdev.26@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsc -p tsconfig.build.json"
   },
   "devDependencies": {
     "@types/express": "^4.17.14",
