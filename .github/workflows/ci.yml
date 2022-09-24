@@ -3,6 +3,18 @@ name: CI
 on: push
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: installing dependencies...
+        run: yarn
+
+      - name: checking lint application...
+        run: yarn lint
+
   tests:
     runs-on: ubuntu-latest
 
@@ -26,15 +38,3 @@ jobs:
 
       - name: building application...
         run: yarn build
-
-  lint:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: installing dependencies...
-        run: yarn
-
-      - name: building application...
-        run: yarn lint

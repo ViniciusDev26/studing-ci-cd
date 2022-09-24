@@ -1,7 +1,7 @@
-import { Router } from "express"
+import { Router } from 'express'
 
-const routes = Router();
+const routes = Router()
 
-routes.get('/', (req, res) => res.json({message: "hello world"}))
+routes.get('/', (req, res) => res.json({ message: 'hello world' }))
 
-export {routes}
+export { routes }
