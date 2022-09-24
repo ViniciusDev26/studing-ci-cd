@@ -1,3 +1,5 @@
-job:
+build:
+  image: "node-16"
   script:
-  - echo "Hello World!!"
+  - yarn
+  - yarn build
